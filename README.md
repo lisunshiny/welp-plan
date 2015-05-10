@@ -1,8 +1,5 @@
-# Flux-capacitr
+# Welp
 
-[Heroku link][heroku]
-
-[heroku]: http://flux-capacitr.herokuapp.com
 
 ## Minimum Viable Product
 This project is a clone of Yelp built on Rails and Backbone. Users can:
