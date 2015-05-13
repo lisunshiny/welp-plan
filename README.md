@@ -36,7 +36,7 @@ to phase 2.
 ### Phase 2: Viewing Restaurants and Reviews (~2 days)
 I will add API routes to serve restaurant and review data as JSON, then add Backbone
 models and collections that fetch data from those routes. By the end of this
-phase, users will be able to create blogs and view both blogs and posts, all
+phase, users will be able to create and view reviews and restaurants, all
 inside a single Backbone app.
 
 [Details][phase-two]
@@ -48,18 +48,18 @@ users can add images to reviews.
 
 [Details][phase-three]
 
-### Phase 4: User Feeds (~1-2 days)
+### Phase 4: Searching for Restaurants (~2 days)
+I'll need to add `search` routes to the Restaurants controller. On the
+Backbone side, there will be a `SearchResults` composite view that has `RestaurantsIndex` subviews. These views will use a plain old `Restaurants`
+collection, but they will fetch from the new `search` routes.
+
+[Details][phase-four]
+
+### Phase 5: User Feeds (~1-2 days)
 I'll start by adding a `feed` route that uses the `current_user`'s
 recent activity to serve a list of blog posts ordered
 chronologically. On the Backbone side, I'll make a `FeedShow` view that pulls from the `current_user`'s recent activity.  Ultimately, this will be the page users
 see after logging in.
-
-[Details][phase-four]
-
-### Phase 5: Searching for Restaurants (~2 days)
-I'll need to add `search` routes to the Restaurants controller. On the
-Backbone side, there will be a `SearchResults` composite view that has `RestaurantsIndex` subviews. These views will use a plain old `Restaurants`
-collection, but they will fetch from the new `search` routes.
 
 [Details][phase-five]
 
